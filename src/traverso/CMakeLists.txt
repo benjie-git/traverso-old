@@ -271,7 +271,7 @@ IF(HAVE_SLV2)
 			traversoslv2
 			rdf
 			rasqal
-			raptor
+			raptor2
 		)
 	ENDIF(USE_SYSTEM_SLV2_LIBRARY)
 ENDIF(HAVE_SLV2)

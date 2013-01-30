@@ -63,7 +63,7 @@ struct TsarEvent {
 	QObject* 	caller;
 	void*		argument;
 	int		slotindex;
-	void*		_a[];
+	void**		_a;
 
 // Used for the signal emiting stuff
 	int signalindex;
