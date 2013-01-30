@@ -1,6 +1,6 @@
 # Copyright 1999-2007 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /home/ingmar/development/exherbo/temp/traverso/traverso/traverso-9999.ebuild,v 1.2 2007/06/03 23:15:52 ingmar Exp $
+# $Header: /sources/traverso/traverso/traverso-9999.ebuild,v 1.2 2007/06/03 23:15:52 ingmar Exp $
 
 inherit eutils qt4 toolchain-funcs cvs
 

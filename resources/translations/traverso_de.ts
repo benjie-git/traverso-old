@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS><TS version="1.1" language="de">
+<!DOCTYPE TS>
+<TS version="2.0" language="de">
 <context>
     <name>AddRemoveClip</name>
     <message>
@@ -150,7 +151,7 @@ p, li { white-space: pre-wrap; }
 <context>
     <name>AlsaDriver</name>
     <message>
-        <location filename="../../src/engine/AlsaDriver.cpp" line="187"/>
+        <location filename="../../src/engine/AlsaDriver.cpp" line="186"/>
         <source>ALSA Driver: The playback device %1 is already in use. Please stop the application using it and run Traverso again</source>
         <translation>ALSA Treiber: Das Wiedergabegerät %1 ist bereits in Verwendung. Bitte stoppen Sie das entsprechende Programm und starten Sie Traverso erneut</translation>
     </message>
@@ -165,7 +166,7 @@ p, li { white-space: pre-wrap; }
         <translation>snd_pcm_open(playback_handle, ..) mit einem unbekannten Fehler fehlgeschlagen</translation>
     </message>
     <message>
-        <location filename="../../src/engine/AlsaDriver.cpp" line="212"/>
+        <location filename="../../src/engine/AlsaDriver.cpp" line="211"/>
         <source>ALSA Driver: The capture device %1 is already in use. Please stop the application using it and run Traverso again</source>
         <translation>ALSA Treiber: Das Aufnahme-Gerät %1 ist bereits in Verwendung. Bitte stoppen Sie das entsprechende Programm und starten Sie Traverso erneut</translation>
     </message>
@@ -308,6 +309,7 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../src/traverso/ui/AppearenceConfigPage.ui" line="303"/>
         <location filename="../../src/traverso/ui/AppearenceConfigPage.ui" line="309"/>
         <source>Toolbars</source>
         <translation type="unfinished"></translation>
@@ -360,7 +362,7 @@ effect after restarting Traverso!</source>
         <translation>Kann nicht auf Track aufnehmen</translation>
     </message>
     <message>
-        <location filename="../../src/core/AudioClip.cpp" line="577"/>
+        <location filename="../../src/core/AudioClip.cpp" line="576"/>
         <source>AudioDevice doesn&apos;t have this Capture Bus: %1 (Track %2)</source>
         <translation>Dieser Aufnahmebus existiert nicht: %1 (Track %2)</translation>
     </message>
@@ -380,44 +382,14 @@ effect after restarting Traverso!</source>
         <translation>Stummschaltung an/ausschalten</translation>
     </message>
     <message>
-        <location filename="../../src/core/AudioClip.h" line="48"/>
-        <source>Mute</source>
-        <translation>Stummschaltung</translation>
-    </message>
-    <message>
-        <location filename="../../src/core/AudioClip.h" line="52"/>
-        <source>Normalize</source>
-        <translation>Normalisieren</translation>
-    </message>
-    <message>
         <location filename="../../src/core/AudioClip.cpp" line="660"/>
         <source>Toggle Lock</source>
         <translation>Sperre an-/ausschalten</translation>
     </message>
     <message>
-        <location filename="../../src/core/AudioClip.h" line="53"/>
-        <source>Lock</source>
-        <translation>Sperre</translation>
-    </message>
-    <message>
         <location filename="../../src/core/AudioClip.cpp" line="687"/>
         <source>Remove Fades</source>
         <translation>Entferne Ein-/Ausblenden</translation>
-    </message>
-    <message>
-        <location filename="../../src/core/AudioClip.h" line="49"/>
-        <source>In: Remove</source>
-        <translation>Einblenden: Entfernen</translation>
-    </message>
-    <message>
-        <location filename="../../src/core/AudioClip.h" line="50"/>
-        <source>Out: Remove</source>
-        <translation>Ausblenden: Entfernen</translation>
-    </message>
-    <message>
-        <location filename="../../src/core/AudioClip.h" line="51"/>
-        <source>Both: Remove</source>
-        <translation>Beide: Entfernen</translation>
     </message>
     <message>
         <location filename="../../src/core/AudioClip.cpp" line="913"/>
@@ -443,6 +415,7 @@ effect after restarting Traverso!</source>
         <translation>Externe Bearbeitung</translation>
     </message>
     <message>
+        <location filename="../../src/sheetcanvas/ui/AudioClipEditDialog.ui" line="115"/>
         <location filename="../../src/sheetcanvas/ui/AudioClipEditDialog.ui" line="122"/>
         <source>hh:mm:ss.sss</source>
         <translation>hh:mm:ss.sss</translation>
@@ -458,6 +431,8 @@ effect after restarting Traverso!</source>
         <translation>Ende</translation>
     </message>
     <message>
+        <location filename="../../src/sheetcanvas/ui/AudioClipEditDialog.ui" line="74"/>
+        <location filename="../../src/sheetcanvas/ui/AudioClipEditDialog.ui" line="240"/>
         <location filename="../../src/sheetcanvas/ui/AudioClipEditDialog.ui" line="313"/>
         <source>Length</source>
         <translation>Länge</translation>
@@ -488,26 +463,31 @@ effect after restarting Traverso!</source>
         <translation>Fade In</translation>
     </message>
     <message>
+        <location filename="../../src/sheetcanvas/ui/AudioClipEditDialog.ui" line="226"/>
         <location filename="../../src/sheetcanvas/ui/AudioClipEditDialog.ui" line="303"/>
         <source>Mode</source>
         <translation>Modus</translation>
     </message>
     <message>
+        <location filename="../../src/sheetcanvas/ui/AudioClipEditDialog.ui" line="233"/>
         <location filename="../../src/sheetcanvas/ui/AudioClipEditDialog.ui" line="296"/>
         <source>Bending</source>
         <translation>Gebogen (Bending)</translation>
     </message>
     <message>
+        <location filename="../../src/sheetcanvas/ui/AudioClipEditDialog.ui" line="250"/>
         <location filename="../../src/sheetcanvas/ui/AudioClipEditDialog.ui" line="323"/>
         <source>Strength</source>
         <translation>Stärke (Strength)</translation>
     </message>
     <message>
+        <location filename="../../src/sheetcanvas/ui/AudioClipEditDialog.ui" line="257"/>
         <location filename="../../src/sheetcanvas/ui/AudioClipEditDialog.ui" line="340"/>
         <source>&amp;Linear</source>
         <translation>&amp;Linear</translation>
     </message>
     <message>
+        <location filename="../../src/sheetcanvas/ui/AudioClipEditDialog.ui" line="264"/>
         <location filename="../../src/sheetcanvas/ui/AudioClipEditDialog.ui" line="347"/>
         <source>&amp;Default</source>
         <translation>&amp;Zurücksetzen</translation>
@@ -548,16 +528,6 @@ effect after restarting Traverso!</source>
         <source>Selection: Invert</source>
         <translation>Auswahl: Umkehren</translation>
     </message>
-    <message>
-        <location filename="../../src/core/AudioClipManager.h" line="37"/>
-        <source>Select all</source>
-        <translation>Alle auswählen</translation>
-    </message>
-    <message>
-        <location filename="../../src/core/AudioClipManager.h" line="38"/>
-        <source>Invert</source>
-        <translation>Umkehren</translation>
-    </message>
 </context>
 <context>
     <name>AudioClipView</name>
@@ -586,46 +556,6 @@ effect after restarting Traverso!</source>
         <source>Succesfully set AudioClip file to %1</source>
         <translation>AudioClip Datei erfolgreich auf %1 gesetzt</translation>
     </message>
-    <message>
-        <location filename="../../src/sheetcanvas/AudioClipView.h" line="51"/>
-        <source>Reset Audio File</source>
-        <translation>Audio Datei zurücksetzen</translation>
-    </message>
-    <message>
-        <location filename="../../src/sheetcanvas/AudioClipView.h" line="52"/>
-        <source>Edit Properties</source>
-        <translation>Eigenschaften bearbeiten</translation>
-    </message>
-    <message>
-        <location filename="../../src/sheetcanvas/AudioClipView.h" line="45"/>
-        <source>Closest: Adjust Length</source>
-        <translation>Nächstes: Länge ändern</translation>
-    </message>
-    <message>
-        <location filename="../../src/sheetcanvas/AudioClipView.h" line="46"/>
-        <source>In: Adjust Length</source>
-        <translation>Einblenden: Länge anpassen</translation>
-    </message>
-    <message>
-        <location filename="../../src/sheetcanvas/AudioClipView.h" line="47"/>
-        <source>Out: Adjust Length</source>
-        <translation>Ausblenden: Länge anpassen</translation>
-    </message>
-    <message>
-        <location filename="../../src/sheetcanvas/AudioClipView.h" line="48"/>
-        <source>In: Select Preset</source>
-        <translation>Einblenden: Voreinstellung auswählen</translation>
-    </message>
-    <message>
-        <location filename="../../src/sheetcanvas/AudioClipView.h" line="49"/>
-        <source>Out: Select Preset</source>
-        <translation>Ausblenden: Voreinstellung auswählen</translation>
-    </message>
-    <message>
-        <location filename="../../src/sheetcanvas/AudioClipView.h" line="50"/>
-        <source>Closest: Delete</source>
-        <translation>Nächstes: Löschen</translation>
-    </message>
 </context>
 <context>
     <name>AudioDevice</name>
@@ -635,6 +565,7 @@ effect after restarting Traverso!</source>
         <translation>Kein Treiber geladen</translation>
     </message>
     <message>
+        <location filename="../../src/engine/AudioDevice.cpp" line="666"/>
         <location filename="../../src/engine/AudioDevice.cpp" line="677"/>
         <source>No Device Configured</source>
         <translation>Kein Gerät konfiguriert</translation>
@@ -683,7 +614,7 @@ effect after restarting Traverso!</source>
 <context>
     <name>AudioDeviceThread</name>
     <message>
-        <location filename="../../src/engine/AudioDeviceThread.cpp" line="136"/>
+        <location filename="../../src/engine/AudioDeviceThread.cpp" line="132"/>
         <source>Unable to set Audiodevice Thread to realtime priority!!!This most likely results in unreliable playback/capture and lots of buffer underruns (== sound drops).In the worst case the program can even malfunction!Please make sure you run this program with realtime privileges!!!</source>
         <translation>Konnte den Audiogeräte-Prozess nicht auf Echtzeit-Priorität setzen! Das wird vermutlich unzuverlässige Aufnahme, Wiedergabe und eine Menge Puffer-Leerläufe (== Aussetzer) verursachen. Schlimmstenfalls kann es Fehlfunktionen im Programm geben! Bitte stellen Sie sicher, dass Sie das Programm mit Echtzeit-Priorität starten!</translation>
     </message>
@@ -994,21 +925,25 @@ p, li { white-space: pre-wrap; }
         <translation>Aufnahme-Busse</translation>
     </message>
     <message>
+        <location filename="../../src/traverso/ui/BusSelectorDialog.ui" line="98"/>
         <location filename="../../src/traverso/ui/BusSelectorDialog.ui" line="170"/>
         <source>Channels</source>
         <translation>Kanäle</translation>
     </message>
     <message>
+        <location filename="../../src/traverso/ui/BusSelectorDialog.ui" line="105"/>
         <location filename="../../src/traverso/ui/BusSelectorDialog.ui" line="177"/>
         <source>Both</source>
         <translation>Beide</translation>
     </message>
     <message>
+        <location filename="../../src/traverso/ui/BusSelectorDialog.ui" line="115"/>
         <location filename="../../src/traverso/ui/BusSelectorDialog.ui" line="187"/>
         <source>Left</source>
         <translation>Links</translation>
     </message>
     <message>
+        <location filename="../../src/traverso/ui/BusSelectorDialog.ui" line="122"/>
         <location filename="../../src/traverso/ui/BusSelectorDialog.ui" line="194"/>
         <source>Right</source>
         <translation>Rechts</translation>
@@ -1217,6 +1152,7 @@ p, li { white-space: pre-wrap; }
         <translation>Kurvenpunkt hinzufügen</translation>
     </message>
     <message>
+        <location filename="../../src/core/Curve.cpp" line="736"/>
         <location filename="../../src/core/Curve.cpp" line="747"/>
         <source>Remove CurveNode</source>
         <translation>Kurvenpunkt entfernen</translation>
@@ -1235,34 +1171,9 @@ p, li { white-space: pre-wrap; }
         <translation>Punkt ziehen</translation>
     </message>
     <message>
-        <location filename="../../src/sheetcanvas/CurveView.h" line="90"/>
-        <source>New node</source>
-        <translation>Neuer Punkt</translation>
-    </message>
-    <message>
-        <location filename="../../src/sheetcanvas/CurveView.h" line="91"/>
-        <source>Remove node</source>
-        <translation>Punkt entfernen</translation>
-    </message>
-    <message>
-        <location filename="../../src/sheetcanvas/CurveView.h" line="93"/>
-        <source>Move node</source>
-        <translation>Punkt verschieben</translation>
-    </message>
-    <message>
         <location filename="../../src/sheetcanvas/CurveView.cpp" line="654"/>
         <source>Clear Nodes</source>
         <translation>Lösche Knotenpunkte</translation>
-    </message>
-    <message>
-        <location filename="../../src/sheetcanvas/CurveView.h" line="92"/>
-        <source>Remove all Nodes</source>
-        <translation>Lösche alle Knotenpunkte</translation>
-    </message>
-    <message>
-        <location filename="../../src/sheetcanvas/CurveView.h" line="94"/>
-        <source>Move node (vertical only)</source>
-        <translation>Knoten verschieben (vertikal)</translation>
     </message>
 </context>
 <context>
@@ -1289,32 +1200,6 @@ p, li { white-space: pre-wrap; }
         <location filename="../../src/traverso/Interface.cpp" line="1269"/>
         <source>Digital Clock</source>
         <translation>Digitale Uhr</translation>
-    </message>
-</context>
-<context>
-    <name>DragMarker</name>
-    <message>
-        <location filename="../../src/sheetcanvas/TimeLineView.h" line="38"/>
-        <source>Move Left</source>
-        <translation>Nach links bewegen</translation>
-    </message>
-    <message>
-        <location filename="../../src/sheetcanvas/TimeLineView.h" line="39"/>
-        <source>Move right</source>
-        <translation>Nach rechts bewegen</translation>
-    </message>
-</context>
-<context>
-    <name>DragNode</name>
-    <message>
-        <location filename="../../src/sheetcanvas/CurveView.h" line="39"/>
-        <source>Move Up</source>
-        <translation>Nach oben bewegen</translation>
-    </message>
-    <message>
-        <location filename="../../src/sheetcanvas/CurveView.h" line="40"/>
-        <source>Move Down</source>
-        <translation>Nach unten bewegen</translation>
     </message>
 </context>
 <context>
@@ -1402,6 +1287,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location filename="../../src/traverso/ui/ExportFormatOptionsWidget.ui" line="381"/>
+        <location filename="../../src/traverso/widgets/ExportFormatOptionsWidget.cpp" line="255"/>
         <source>Bitrate</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1412,6 +1298,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location filename="../../src/traverso/ui/ExportFormatOptionsWidget.ui" line="538"/>
+        <location filename="../../src/traverso/widgets/ExportFormatOptionsWidget.cpp" line="266"/>
         <source>Maximum Bitrate</source>
         <translation>Maximale Bitrate</translation>
     </message>
@@ -1488,6 +1375,7 @@ p, li { white-space: pre-wrap; }
         <translation>Qualität (kleine Datei &lt;-&gt; gute Qualität)</translation>
     </message>
     <message>
+        <location filename="../../src/traverso/ui/ExportFormatOptionsWidget.ui" line="473"/>
         <location filename="../../src/traverso/ui/ExportFormatOptionsWidget.ui" line="522"/>
         <source>Encoding Method</source>
         <translation>Kodiermethode</translation>
@@ -1508,6 +1396,7 @@ p, li { white-space: pre-wrap; }
         <translation>Qualität (schnell &lt;-&gt; gute Qualität)</translation>
     </message>
     <message>
+        <location filename="../../src/traverso/ui/ExportFormatOptionsWidget.ui" line="664"/>
         <location filename="../../src/traverso/ui/ExportFormatOptionsWidget.ui" line="708"/>
         <source>Sample Rate</source>
         <translation>Samplefrequenz</translation>
@@ -1544,11 +1433,13 @@ p, li { white-space: pre-wrap; }
 <context>
     <name>FadeBend</name>
     <message>
+        <location filename="../../src/commands/Fade.cpp" line="153"/>
         <location filename="../../src/commands/Fade.cpp" line="161"/>
         <source>Fade In: bend</source>
         <translation>Einblenden: Biegung</translation>
     </message>
     <message>
+        <location filename="../../src/commands/Fade.cpp" line="153"/>
         <location filename="../../src/commands/Fade.cpp" line="161"/>
         <source>Fade Out: bend</source>
         <translation>Ausblenden: Biegung</translation>
@@ -1557,29 +1448,9 @@ p, li { white-space: pre-wrap; }
 <context>
     <name>FadeCurve</name>
     <message>
-        <location filename="../../src/core/FadeCurve.cpp" line="241"/>
+        <location filename="../../src/core/FadeCurve.cpp" line="275"/>
         <source>Fade Preset</source>
         <translation>Voreinstellungen für Ein-/Ausblenden</translation>
-    </message>
-    <message>
-        <location filename="../../src/core/FadeCurve.h" line="40"/>
-        <source>Toggle Bypass</source>
-        <translation>Bypass ein-/ausschalten</translation>
-    </message>
-    <message>
-        <location filename="../../src/core/FadeCurve.h" line="41"/>
-        <source>Cycle Shape</source>
-        <translation>Form umschalten</translation>
-    </message>
-    <message>
-        <location filename="../../src/core/FadeCurve.h" line="42"/>
-        <source>Remove Fade</source>
-        <translation>Ein-/Ausblenden entfernen</translation>
-    </message>
-    <message>
-        <location filename="../../src/core/FadeCurve.h" line="43"/>
-        <source>Toggle Raster</source>
-        <translation>Raster ein-/ausschalten</translation>
     </message>
 </context>
 <context>
@@ -1621,37 +1492,22 @@ p, li { white-space: pre-wrap; }
 <context>
     <name>FadeStrength</name>
     <message>
+        <location filename="../../src/commands/Fade.cpp" line="245"/>
         <location filename="../../src/commands/Fade.cpp" line="253"/>
         <source>Fade In: strength</source>
         <translation>Einblenden: Stärke</translation>
     </message>
     <message>
+        <location filename="../../src/commands/Fade.cpp" line="245"/>
         <location filename="../../src/commands/Fade.cpp" line="253"/>
         <source>Fade Out: strength</source>
         <translation>Ausblenden: Stärke</translation>
     </message>
 </context>
 <context>
-    <name>FadeView</name>
-    <message>
-        <location filename="../../src/sheetcanvas/FadeView.h" line="36"/>
-        <source>Adjust Bend</source>
-        <translation>Biegung verändern</translation>
-    </message>
-    <message>
-        <location filename="../../src/sheetcanvas/FadeView.h" line="37"/>
-        <source>Adjust Strength</source>
-        <translation>Stärke verändern</translation>
-    </message>
-    <message>
-        <location filename="../../src/sheetcanvas/FadeView.h" line="38"/>
-        <source>Select Preset</source>
-        <translation>Voreinstellung auswählen</translation>
-    </message>
-</context>
-<context>
     <name>FileWidget</name>
     <message>
+        <location filename="../../src/traverso/widgets/ResourcesWidget.cpp" line="69"/>
         <location filename="../../src/traverso/widgets/ResourcesWidget.cpp" line="136"/>
         <source>My Computer</source>
         <translation>Mein Computer</translation>
@@ -1680,6 +1536,8 @@ p, li { white-space: pre-wrap; }
         <translation>Audioquelle importieren</translation>
     </message>
     <message>
+        <location filename="../../src/commands/Import.cpp" line="48"/>
+        <location filename="../../src/commands/Import.cpp" line="56"/>
         <location filename="../../src/commands/Import.cpp" line="62"/>
         <source>Import Audio File</source>
         <translation>Audiodatei importieren</translation>
@@ -1690,6 +1548,7 @@ p, li { white-space: pre-wrap; }
         <translation>Stille einfügen</translation>
     </message>
     <message>
+        <location filename="../../src/commands/Import.cpp" line="92"/>
         <location filename="../../src/commands/Import.cpp" line="93"/>
         <source>Silence</source>
         <translation>Stille</translation>
@@ -1741,7 +1600,7 @@ p, li { white-space: pre-wrap; }
         <translation>Command Plugin %1 nicht gefunden!</translation>
     </message>
     <message>
-        <location filename="../../src/core/InputEngine.cpp" line="381"/>
+        <location filename="../../src/core/InputEngine.cpp" line="380"/>
         <source>Plugin %1 doesn&apos;t implement Command %2</source>
         <translation>Plugin %1 setzt Befehl %2 nicht um</translation>
     </message>
@@ -1767,7 +1626,7 @@ p, li { white-space: pre-wrap; }
         <translation>Verlauf</translation>
     </message>
     <message>
-        <location filename="../../src/traverso/Interface.h" line="75"/>
+        <location filename="../../src/traverso/Interface.cpp" line="373"/>
         <source>About Traverso</source>
         <translation>Über Traverso</translation>
     </message>
@@ -1882,37 +1741,12 @@ p, li { white-space: pre-wrap; }
         <translation>&lt;b&gt;Tastenfolge&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../../src/traverso/Interface.h" line="73"/>
-        <source>Show Export Dialog</source>
-        <translation>Zeige Export-Dialog</translation>
-    </message>
-    <message>
-        <location filename="../../src/traverso/Interface.h" line="74"/>
-        <source>Show Context Menu</source>
-        <translation>Zeige Kontextmenü</translation>
-    </message>
-    <message>
-        <location filename="../../src/traverso/Interface.h" line="76"/>
-        <source>Show Project Management Dialog</source>
-        <translation>Zeige Projektverwaltungs-Dialog</translation>
-    </message>
-    <message>
-        <location filename="../../src/traverso/Interface.h" line="77"/>
-        <source>Full Screen</source>
-        <translation>Vollbild</translation>
-    </message>
-    <message>
-        <location filename="../../src/traverso/Interface.h" line="78"/>
-        <source>Export keymap</source>
-        <translation>Tastenbelegung exportieren</translation>
-    </message>
-    <message>
         <location filename="../../src/traverso/Interface.cpp" line="624"/>
         <source>Marker Editor...</source>
         <translation>Markierungseditor...</translation>
     </message>
     <message>
-        <location filename="../../src/traverso/Interface.cpp" line="372"/>
+        <location filename="../../src/traverso/Interface.cpp" line="366"/>
         <source>Traverso %1 (built with Qt %2)
 
 A multitrack audio recording and editing program.
@@ -1970,7 +1804,7 @@ Traverso basiert. (Gcc, Qt, Xorg, Linux, und so weiter...)</translation>
         <translation>Traverso - Wichtig</translation>
     </message>
     <message>
-        <location filename="../../src/traverso/Interface.cpp" line="1399"/>
+        <location filename="../../src/traverso/Interface.cpp" line="1397"/>
         <source>A Project directory changed outside of Traverso. 
 
 This is NOT supported! Please undo this change now!
@@ -1988,7 +1822,7 @@ Verwenden Sie zum Ändern eines Projektnamens stattdessen bitte den Projekt-Mana
         <translation>Traverso - Laden des Projektes fehlgeschlagen</translation>
     </message>
     <message>
-        <location filename="../../src/traverso/Interface.cpp" line="1432"/>
+        <location filename="../../src/traverso/Interface.cpp" line="1430"/>
         <source>The requested Project `%1` 
 could not be loaded for the following reason:
 
@@ -2005,6 +1839,8 @@ Falls Backups bestehen, haben Sie nun die Möglichkeit,
 ein solches zu öffnen.</translation>
     </message>
     <message>
+        <location filename="../../src/traverso/Interface.cpp" line="1450"/>
+        <location filename="../../src/traverso/Interface.cpp" line="1457"/>
         <location filename="../../src/traverso/Interface.cpp" line="1463"/>
         <source>Changed encoding for recording to %1</source>
         <translation>Kodierung für Aufnahme in %1 wurde geändert</translation>
@@ -2015,19 +1851,12 @@ ein solches zu öffnen.</translation>
         <translation>&amp;Qualität der Samplerate-Konvertierung</translation>
     </message>
     <message>
+        <location filename="../../src/traverso/Interface.cpp" line="1469"/>
+        <location filename="../../src/traverso/Interface.cpp" line="1475"/>
+        <location filename="../../src/traverso/Interface.cpp" line="1481"/>
         <location filename="../../src/traverso/Interface.cpp" line="1487"/>
         <source>Changed resample quality to: %1</source>
         <translation>Ändere Qualität der Samplerate-Konvertierung auf: %1</translation>
-    </message>
-    <message>
-        <location filename="../../src/traverso/Interface.h" line="79"/>
-        <source>Play</source>
-        <translation>Wiedergabe</translation>
-    </message>
-    <message>
-        <location filename="../../src/traverso/Interface.h" line="80"/>
-        <source>Record</source>
-        <translation>Aufnahme</translation>
     </message>
     <message>
         <location filename="../../src/traverso/Interface.cpp" line="567"/>
@@ -2301,11 +2130,25 @@ gespeichert.</translation>
         <translation>ISRC:</translation>
     </message>
     <message>
+        <location filename="../../src/traverso/ui/MarkerDialog.ui" line="67"/>
+        <location filename="../../src/traverso/ui/MarkerDialog.ui" line="81"/>
+        <location filename="../../src/traverso/ui/MarkerDialog.ui" line="151"/>
+        <location filename="../../src/traverso/ui/MarkerDialog.ui" line="175"/>
+        <location filename="../../src/traverso/ui/MarkerDialog.ui" line="199"/>
+        <location filename="../../src/traverso/ui/MarkerDialog.ui" line="256"/>
+        <location filename="../../src/traverso/ui/MarkerDialog.ui" line="270"/>
         <location filename="../../src/traverso/ui/MarkerDialog.ui" line="284"/>
         <source>Apply to all</source>
         <translation>Auf alle anwenden</translation>
     </message>
     <message>
+        <location filename="../../src/traverso/ui/MarkerDialog.ui" line="70"/>
+        <location filename="../../src/traverso/ui/MarkerDialog.ui" line="84"/>
+        <location filename="../../src/traverso/ui/MarkerDialog.ui" line="154"/>
+        <location filename="../../src/traverso/ui/MarkerDialog.ui" line="178"/>
+        <location filename="../../src/traverso/ui/MarkerDialog.ui" line="202"/>
+        <location filename="../../src/traverso/ui/MarkerDialog.ui" line="259"/>
+        <location filename="../../src/traverso/ui/MarkerDialog.ui" line="273"/>
         <location filename="../../src/traverso/ui/MarkerDialog.ui" line="287"/>
         <source>...</source>
         <translation>...</translation>
@@ -2505,16 +2348,21 @@ gespeichert.</translation>
         <translation>Audio-Dateien (*.wav *.flac *.ogg *.mp3 *.wv *.w64)</translation>
     </message>
     <message>
+        <location filename="../../src/traverso/ui/NewProjectDialog.ui" line="100"/>
         <location filename="../../src/traverso/ui/NewProjectDialog.ui" line="132"/>
         <source>Import Audio Files</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../src/traverso/ui/NewProjectDialog.ui" line="110"/>
         <location filename="../../src/traverso/ui/NewProjectDialog.ui" line="224"/>
         <source>Empty Project</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../src/traverso/ui/NewProjectDialog.ui" line="140"/>
+        <location filename="../../src/traverso/ui/NewProjectDialog.ui" line="147"/>
+        <location filename="../../src/traverso/ui/NewProjectDialog.ui" line="167"/>
         <location filename="../../src/traverso/ui/NewProjectDialog.ui" line="174"/>
         <source>...</source>
         <translation type="unfinished">...</translation>
@@ -2660,12 +2508,13 @@ gespeichert.</translation>
         <translation>Wählen sie ein existierendes Projektverzeichnis, oder erstellen Sie ein neues</translation>
     </message>
     <message>
+        <location filename="../../src/traverso/dialogs/project/OpenProjectDialog.cpp" line="258"/>
         <location filename="../../src/traverso/dialogs/project/OpenProjectDialog.cpp" line="269"/>
         <source>Traverso - Warning</source>
         <translation>Traverso - Warnung</translation>
     </message>
     <message>
-        <location filename="../../src/traverso/dialogs/project/OpenProjectDialog.cpp" line="270"/>
+        <location filename="../../src/traverso/dialogs/project/OpenProjectDialog.cpp" line="269"/>
         <source>Unable to create Project directory! 
 </source>
         <translation>Konnte Projektordner nicht anlegen! 
@@ -2714,7 +2563,7 @@ gespeichert.</translation>
         <translation>Projektverzeichnis wählen</translation>
     </message>
     <message>
-        <location filename="../../src/traverso/dialogs/project/OpenProjectDialog.cpp" line="138"/>
+        <location filename="../../src/traverso/dialogs/project/OpenProjectDialog.cpp" line="135"/>
         <source>&lt;p&gt;Project directory name &lt;b&gt;%1&lt;/b&gt; is different from the Project title &lt;b&gt;%2&lt;/b&gt;!&lt;/p&gt;&lt;p&gt;Did you rename the Project directory ? &lt;/p&gt;&lt;p&gt;Please rename the directory back to the Project title &lt;b&gt;%1&lt;/b&gt;, and change the Project title with the Project Manager Dialog!&lt;/p&gt;</source>
         <translation>&lt;p&gt;Projekt-Verzeichnis &lt;b&gt;%1&lt;/b&gt; unterscheidet sich vom Projekttitel &lt;b&gt;%2&lt;/b&gt;!&lt;/p&gt;&lt;p&gt;Haben Sie das Projektverzeichnis umbenannt?&lt;/p&gt;&lt;p&gt;Bitte benennen Sie das Projektverzeichnis zurück in den Projektnamen &lt;b&gt;%1&lt;/b&gt; und ändern Sie den Projektnamen im Projekt-Manager-Dialog!&lt;/p&gt;</translation>
     </message>
@@ -2724,7 +2573,7 @@ gespeichert.</translation>
         <translation>Projekt %1 existiert nicht. Haben Sie das dazugehörige Verzeichnis umbenannt oder gelöscht?</translation>
     </message>
     <message>
-        <location filename="../../src/traverso/dialogs/project/OpenProjectDialog.cpp" line="261"/>
+        <location filename="../../src/traverso/dialogs/project/OpenProjectDialog.cpp" line="260"/>
         <source>Please check permission for this directory or choose another one:
 
  %1</source>
@@ -2733,7 +2582,7 @@ gespeichert.</translation>
 %1</translation>
     </message>
     <message>
-        <location filename="../../src/traverso/dialogs/project/OpenProjectDialog.cpp" line="260"/>
+        <location filename="../../src/traverso/dialogs/project/OpenProjectDialog.cpp" line="259"/>
         <source>This directory is not writable by you! 
 </source>
         <translation>Dieses Verzeichnis kann nicht geschrieben werden!</translation>
@@ -2742,6 +2591,9 @@ gespeichert.</translation>
 <context>
     <name>PADriver</name>
     <message>
+        <location filename="../../src/engine/PADriver.cpp" line="129"/>
+        <location filename="../../src/engine/PADriver.cpp" line="217"/>
+        <location filename="../../src/engine/PADriver.cpp" line="263"/>
         <location filename="../../src/engine/PADriver.cpp" line="279"/>
         <source>PADriver:: PortAudio error: %1</source>
         <translation>PADriver:: PortAudio Fehler: %1</translation>
@@ -2967,19 +2819,6 @@ nach (Neu)laden des Projektes angewandt.</translation>
     </message>
 </context>
 <context>
-    <name>PluginView</name>
-    <message>
-        <location filename="../../src/sheetcanvas/PluginView.h" line="40"/>
-        <source>Remove</source>
-        <translation>Entfernen</translation>
-    </message>
-    <message>
-        <location filename="../../src/sheetcanvas/PluginView.h" line="39"/>
-        <source>Edit...</source>
-        <translation>Bearbeiten...</translation>
-    </message>
-</context>
-<context>
     <name>ProgressToolBar</name>
     <message>
         <location filename="../../src/traverso/widgets/InfoWidgets.cpp" line="577"/>
@@ -2995,6 +2834,8 @@ nach (Neu)laden des Projektes angewandt.</translation>
 <context>
     <name>Project</name>
     <message>
+        <location filename="../../src/core/Project.cpp" line="103"/>
+        <location filename="../../src/core/Project.cpp" line="140"/>
         <location filename="../../src/core/Project.cpp" line="154"/>
         <source>Cannot create dir %1</source>
         <translation>Konnte Verzeichnis %1 nicht erstellen</translation>
@@ -3035,7 +2876,7 @@ nach (Neu)laden des Projektes angewandt.</translation>
         <translation>Sheet &apos;%1&apos; entfernen</translation>
     </message>
     <message>
-        <location filename="../../src/core/Project.cpp" line="605"/>
+        <location filename="../../src/core/Project.cpp" line="604"/>
         <source>Detected clipping in exported audio! (%1)</source>
         <translation>Es wurde Clipping im exportierten Audiosignal erkannt! (%1)</translation>
     </message>
@@ -3045,6 +2886,7 @@ nach (Neu)laden des Projektes angewandt.</translation>
         <translation>Errechneter Normalisierungsfaktor: %1</translation>
     </message>
     <message>
+        <location filename="../../src/core/Project.cpp" line="375"/>
         <location filename="../../src/core/Project.cpp" line="892"/>
         <source>Traverso - Information</source>
         <translation>Traverso - Information</translation>
@@ -3065,7 +2907,7 @@ nach (Neu)laden des Projektes angewandt.</translation>
         <translation>Es gibt bereits ein Projekt mit dem Titel &apos;%1&apos;. Der neue Titel wurde nicht gesetzt!</translation>
     </message>
     <message>
-        <location filename="../../src/core/Project.cpp" line="362"/>
+        <location filename="../../src/core/Project.cpp" line="361"/>
         <source>Project directory %1 no longer exists, did you rename it? Shame on you! Please undo that, and come back later to rename your Project...</source>
         <translation>Projekt-Verzeichnis &apos;%1&apos; existiert nicht mehr. Haben Sie es umbenannt? Böööse! Bitte machen Sie diese Änderung rückgängig und fahren erst danach mit diesem Projekt fort...</translation>
     </message>
@@ -3209,6 +3051,9 @@ nach (Neu)laden des Projektes angewandt.</translation>
         <translation>Sampleauflösung</translation>
     </message>
     <message>
+        <location filename="../../src/traverso/ui/ProjectInfoWidget.ui" line="84"/>
+        <location filename="../../src/traverso/ui/ProjectInfoWidget.ui" line="111"/>
+        <location filename="../../src/traverso/ui/ProjectInfoWidget.ui" line="159"/>
         <location filename="../../src/traverso/ui/ProjectInfoWidget.ui" line="183"/>
         <source>-</source>
         <translation>-</translation>
@@ -3232,7 +3077,7 @@ nach (Neu)laden des Projektes angewandt.</translation>
 <context>
     <name>ProjectManager</name>
     <message>
-        <location filename="../../src/core/ProjectManager.h" line="42"/>
+        <location filename="../../src/core/ProjectManager.cpp" line="111"/>
         <source>Save Project</source>
         <translation>Projekt speichern</translation>
     </message>
@@ -3242,11 +3087,13 @@ nach (Neu)laden des Projektes angewandt.</translation>
         <translation>Wollen Sie das Projekt vor dem Beenden speichern?</translation>
     </message>
     <message>
+        <location filename="../../src/core/ProjectManager.cpp" line="148"/>
         <location filename="../../src/core/ProjectManager.cpp" line="169"/>
         <source>Project %1 already exists!</source>
         <translation>Projekt %1 existiert bereits!</translation>
     </message>
     <message>
+        <location filename="../../src/core/ProjectManager.cpp" line="159"/>
         <location filename="../../src/core/ProjectManager.cpp" line="180"/>
         <source>Unable to create new Project %1</source>
         <translation>Konnte neues Projekt %1 nicht erstellen</translation>
@@ -3269,12 +3116,14 @@ nach (Neu)laden des Projektes angewandt.</translation>
 </translation>
     </message>
     <message>
+        <location filename="../../src/core/ProjectManager.cpp" line="312"/>
+        <location filename="../../src/core/ProjectManager.cpp" line="320"/>
         <location filename="../../src/core/ProjectManager.cpp" line="330"/>
         <source>Traverso - Warning</source>
         <translation>Traverso - Warnung</translation>
     </message>
     <message>
-        <location filename="../../src/core/ProjectManager.cpp" line="332"/>
+        <location filename="../../src/core/ProjectManager.cpp" line="331"/>
         <source>Unable to create Project directory! 
 </source>
         <translation>Konnte Projektorder nicht anlegen! 
@@ -3298,11 +3147,6 @@ nach (Neu)laden des Projektes angewandt.</translation>
         <translation>Standardprojekt erstellt von Traverso</translation>
     </message>
     <message>
-        <location filename="../../src/core/ProjectManager.h" line="43"/>
-        <source>Exit application</source>
-        <translation>Programm verlassen</translation>
-    </message>
-    <message>
         <location filename="../../src/core/ProjectManager.cpp" line="355"/>
         <source>Project %1 no longer could be found! (Did you remove or rename the Project directory ?)</source>
         <translation>Projekt %1 konnte nicht mehr gefunden werden! (Haben Sie das Projektverzeichnis umbenannt oder verschoben?)</translation>
@@ -3313,13 +3157,13 @@ nach (Neu)laden des Projektes angewandt.</translation>
         <translation>Konnte Projektverzeichnis nicht zu %1 umbenennen</translation>
     </message>
     <message>
-        <location filename="../../src/core/ProjectManager.cpp" line="322"/>
+        <location filename="../../src/core/ProjectManager.cpp" line="321"/>
         <source>This directory is not writable by you! 
 </source>
         <translation>Dieses Verzeichnis kann nicht geschrieben werden!</translation>
     </message>
     <message>
-        <location filename="../../src/core/ProjectManager.cpp" line="323"/>
+        <location filename="../../src/core/ProjectManager.cpp" line="322"/>
         <source>Please check permission for this directory or choose another one:
 
  %1</source>
@@ -3343,7 +3187,7 @@ nach (Neu)laden des Projektes angewandt.</translation>
         <translation>Wählen Sie ein Verzeichnis für ihre Projekte</translation>
     </message>
     <message>
-        <location filename="../../src/core/ProjectManager.cpp" line="314"/>
+        <location filename="../../src/core/ProjectManager.cpp" line="313"/>
         <source>No directory was selected, to retry open the &apos;Open Project Dialog&apos; and click &apos;Select Project Directory&apos; button
 </source>
         <translation>Es wurde kein Verzeichnis ausgewählt. Im Dialog &quot;Projekt öffnen&quot;, &quot;Projektverzeichnis auswählen&quot; kann es nachträglich ausgewählt werden</translation>
@@ -3372,6 +3216,7 @@ nach (Neu)laden des Projektes angewandt.</translation>
         <translation>Konnte Verzeichnis %1 nicht anlegen!</translation>
     </message>
     <message>
+        <location filename="../../src/traverso/dialogs/project/ProjectManagerDialog.cpp" line="259"/>
         <location filename="../../src/traverso/dialogs/project/ProjectManagerDialog.cpp" line="295"/>
         <source>Traverso - Information</source>
         <translation>Traverso - Information</translation>
@@ -3394,11 +3239,13 @@ Wollen Sie diese überschreiben?</translation>
         <translation>Konnte Datei %1 nicht zum Schreiben öffnen!</translation>
     </message>
     <message>
+        <location filename="../../src/traverso/ui/ProjectManagerDialog.ui" line="19"/>
         <location filename="../../src/traverso/ui/SheetManagerDialog.ui" line="19"/>
         <source>Dialog</source>
         <translation>Dialog</translation>
     </message>
     <message>
+        <location filename="../../src/traverso/ui/ProjectManagerDialog.ui" line="35"/>
         <location filename="../../src/traverso/ui/SheetManagerDialog.ui" line="35"/>
         <source>Project</source>
         <translation>Projekt</translation>
@@ -3439,31 +3286,37 @@ Wollen Sie diese überschreiben?</translation>
         <translation>Vorlage</translation>
     </message>
     <message>
+        <location filename="../../src/traverso/ui/ProjectManagerDialog.ui" line="219"/>
         <location filename="../../src/traverso/ui/SheetManagerDialog.ui" line="40"/>
         <source>Sheets</source>
         <translation>Arbeitsbereiche</translation>
     </message>
     <message>
+        <location filename="../../src/traverso/ui/ProjectManagerDialog.ui" line="272"/>
         <location filename="../../src/traverso/ui/SheetManagerDialog.ui" line="78"/>
         <source>Selected Sheet</source>
         <translation>Ausgewählter Arbeitsbereich</translation>
     </message>
     <message>
+        <location filename="../../src/traverso/ui/ProjectManagerDialog.ui" line="302"/>
         <location filename="../../src/traverso/ui/SheetManagerDialog.ui" line="108"/>
         <source>Delete</source>
         <translation>Löschen</translation>
     </message>
     <message>
+        <location filename="../../src/traverso/ui/ProjectManagerDialog.ui" line="328"/>
         <location filename="../../src/traverso/ui/SheetManagerDialog.ui" line="134"/>
         <source>Rename</source>
         <translation>Umbenennen</translation>
     </message>
     <message>
+        <location filename="../../src/traverso/ui/ProjectManagerDialog.ui" line="340"/>
         <location filename="../../src/traverso/ui/SheetManagerDialog.ui" line="146"/>
         <source>New Sheet</source>
         <translation>Neuer Arbeitsbereich</translation>
     </message>
     <message>
+        <location filename="../../src/traverso/ui/ProjectManagerDialog.ui" line="360"/>
         <location filename="../../src/traverso/ui/SheetManagerDialog.ui" line="166"/>
         <source>Create new Sheet</source>
         <translation>Neuen Arbeitsbereich erstellen</translation>
@@ -3515,7 +3368,7 @@ p, li { white-space: pre-wrap; }
         <source>Length</source>
         <translation>Länge</translation>
     </message>
-    <message encoding="UTF-8">
+    <message utf8="true">
         <location filename="../../src/traverso/ui/ProjectManagerDialog.ui" line="388"/>
         <source>CD Text</source>
         <translation>CD-Text</translation>
@@ -3640,7 +3493,7 @@ p, li { white-space: pre-wrap; }
         <source>Operette</source>
         <translation>Operette</translation>
     </message>
-    <message encoding="UTF-8">
+    <message utf8="true">
         <location filename="../../src/traverso/ui/ProjectManagerDialog.ui" line="562"/>
         <source>Pop Music</source>
         <translation>Pop Music</translation>
@@ -3799,7 +3652,7 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/core/FadeCurve.cpp" line="84"/>
+        <location filename="../../src/core/FadeCurve.cpp" line="85"/>
         <source>FadeCurve</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3855,7 +3708,7 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt;       &lt;span style=&quot; font-weight:600;&quot;&gt;&amp;lt; V &amp;gt;    &lt;/span&gt; moves the Playhead back to the Work Cursor.&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt;        &lt;span style=&quot; font-weight:600;&quot;&gt;[ D ] &lt;/span&gt;     move objects around (Audio Clip, Curve Nodes, etc)&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt;        &lt;span style=&quot; font-weight:600;&quot;&gt;[ Z ]&lt;/span&gt;       zooms in and out.&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt;        &lt;span style=&quot; font-weight:600;&quot;&gt;[ TAB ]&lt;/span&gt;<byte value="x9"/> scroll omnidirectional (aka Shuttle) &lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt;        &lt;span style=&quot; font-weight:600;&quot;&gt;[ TAB ]&lt;/span&gt;	 scroll omnidirectional (aka Shuttle) &lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt;And some Audio Clip Commands:&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt;   &lt;span style=&quot; font-weight:600;&quot;&gt;[ E ] &lt;/span&gt;  drags a Clip&apos;s left or right edge.&lt;/p&gt;
@@ -3898,6 +3751,7 @@ p, li { white-space: pre-wrap; }
         <translation>Datei existiert nicht!</translation>
     </message>
     <message>
+        <location filename="../../src/core/ReadSource.cpp" line="707"/>
         <location filename="../../src/core/ReadSource.cpp" line="709"/>
         <source>No ReadSource error set</source>
         <translation>No ReadSource-Fehler</translation>
@@ -3985,21 +3839,25 @@ p, li { white-space: pre-wrap; }
         <translation>Qualität der Samplerate-Konvertierung beim Export</translation>
     </message>
     <message>
+        <location filename="../../src/traverso/ui/RecordingConfigPage.ui" line="205"/>
         <location filename="../../src/traverso/ui/RecordingConfigPage.ui" line="229"/>
         <source>Best</source>
         <translation>Beste</translation>
     </message>
     <message>
+        <location filename="../../src/traverso/ui/RecordingConfigPage.ui" line="210"/>
         <location filename="../../src/traverso/ui/RecordingConfigPage.ui" line="234"/>
         <source>High</source>
         <translation>Hoch</translation>
     </message>
     <message>
+        <location filename="../../src/traverso/ui/RecordingConfigPage.ui" line="215"/>
         <location filename="../../src/traverso/ui/RecordingConfigPage.ui" line="239"/>
         <source>Medium</source>
         <translation>Mittel</translation>
     </message>
     <message>
+        <location filename="../../src/traverso/ui/RecordingConfigPage.ui" line="220"/>
         <location filename="../../src/traverso/ui/RecordingConfigPage.ui" line="244"/>
         <source>Fast</source>
         <translation>Schnell</translation>
@@ -4013,12 +3871,12 @@ p, li { white-space: pre-wrap; }
 <context>
     <name>ResourcesManager</name>
     <message>
-        <location filename="../../src/core/ResourcesManager.cpp" line="235"/>
+        <location filename="../../src/core/ResourcesManager.cpp" line="234"/>
         <source>ResourcesManager::  Failed to initialize ReadSource %1 (Reason: %2)</source>
         <translation>ResourcesManager:: Konnte Readsource %1 nicht initialisieren (Grund: %2)</translation>
     </message>
     <message>
-        <location filename="../../src/core/ResourcesManager.cpp" line="427"/>
+        <location filename="../../src/core/ResourcesManager.cpp" line="425"/>
         <source>ResourcesManager: Received request to remove Audio Source %1but it is still in use by %2 AudioClips!!. NOT removing it!</source>
         <translation type="unfinished"></translation>
     </message>
@@ -4084,6 +3942,7 @@ p, li { white-space: pre-wrap; }
         <translation>Letzte Sicherheitskopie:</translation>
     </message>
     <message>
+        <location filename="../../src/traverso/ui/RestoreProjectBackupDialog.ui" line="48"/>
         <location filename="../../src/traverso/ui/RestoreProjectBackupDialog.ui" line="55"/>
         <source>-</source>
         <translation>-</translation>
@@ -4140,6 +3999,7 @@ p, li { white-space: pre-wrap; }
 <context>
     <name>Sheet</name>
     <message>
+        <location filename="../../src/core/Sheet.cpp" line="1081"/>
         <location filename="../../src/core/Sheet.cpp" line="1090"/>
         <source>Hard Disk overload detected!</source>
         <translation>Festplattenüberlastung erkannt!</translation>
@@ -4165,11 +4025,13 @@ p, li { white-space: pre-wrap; }
         <translation>Spur entfernen</translation>
     </message>
     <message>
+        <location filename="../../src/core/Sheet.cpp" line="83"/>
         <location filename="../../src/core/Sheet.cpp" line="95"/>
         <source>Untitled</source>
         <translation>Unbenannt</translation>
     </message>
     <message>
+        <location filename="../../src/core/Sheet.cpp" line="85"/>
         <location filename="../../src/core/Sheet.cpp" line="97"/>
         <source>No artists name set</source>
         <translation>Kein Künstlername festgelegt</translation>
@@ -4181,66 +4043,6 @@ p, li { white-space: pre-wrap; }
             <numerusform>Aufnahme in %n Clips</numerusform>
             <numerusform></numerusform>
         </translation>
-    </message>
-    <message>
-        <location filename="../../src/core/Sheet.h" line="55"/>
-        <source>Play</source>
-        <translation>Wiedergabe</translation>
-    </message>
-    <message>
-        <location filename="../../src/core/Sheet.h" line="56"/>
-        <source>Record</source>
-        <translation>Aufnahme</translation>
-    </message>
-    <message>
-        <location filename="../../src/core/Sheet.h" line="57"/>
-        <source>Workcursor: To next edge</source>
-        <translation>Arbeitscursor: Zu nächster Kante</translation>
-    </message>
-    <message>
-        <location filename="../../src/core/Sheet.h" line="58"/>
-        <source>Workcursor: To previous edge</source>
-        <translation>Arbeitscursor: Zu vorheriger Kante</translation>
-    </message>
-    <message>
-        <location filename="../../src/core/Sheet.h" line="59"/>
-        <source>Undo</source>
-        <translation>Rückgängig</translation>
-    </message>
-    <message>
-        <location filename="../../src/core/Sheet.h" line="60"/>
-        <source>Redo</source>
-        <translation>Wiederholen</translation>
-    </message>
-    <message>
-        <location filename="../../src/core/Sheet.h" line="61"/>
-        <source>Snap: On/Off</source>
-        <translation>Einrasten: An/Aus</translation>
-    </message>
-    <message>
-        <location filename="../../src/core/Sheet.h" line="62"/>
-        <source>Solo: On/Off</source>
-        <translation>Solo: Ein/Aus</translation>
-    </message>
-    <message>
-        <location filename="../../src/core/Sheet.h" line="63"/>
-        <source>Mute: On/Off</source>
-        <translation>Stumm: Ein/Aus</translation>
-    </message>
-    <message>
-        <location filename="../../src/core/Sheet.h" line="64"/>
-        <source>Arm: On/Off</source>
-        <translation>Aufnahme: Ein/Aus</translation>
-    </message>
-    <message>
-        <location filename="../../src/core/Sheet.h" line="65"/>
-        <source>Mode: Edit</source>
-        <translation>Modus: Bearbeiten</translation>
-    </message>
-    <message>
-        <location filename="../../src/core/Sheet.h" line="66"/>
-        <source>Mode: Curve</source>
-        <translation>Modus: Kurve</translation>
     </message>
     <message>
         <location filename="../../src/core/Sheet.cpp" line="458"/>
@@ -4262,94 +4064,6 @@ p, li { white-space: pre-wrap; }
         <source>No Tracks armed for recording!</source>
         <translation>Keine Spur auf Aufnahme gestellt!</translation>
     </message>
-    <message>
-        <location filename="../../src/core/Sheet.h" line="67"/>
-        <source>To previous snap position</source>
-        <translation>Zur vorherigen Rasterposition</translation>
-    </message>
-    <message>
-        <location filename="../../src/core/Sheet.h" line="68"/>
-        <source>To next snap position</source>
-        <translation>Zur nächsten Raster-Position</translation>
-    </message>
-</context>
-<context>
-    <name>SheetView</name>
-    <message>
-        <location filename="../../src/sheetcanvas/SheetView.h" line="45"/>
-        <source>Center View</source>
-        <translation>Center Ansicht</translation>
-    </message>
-    <message>
-        <location filename="../../src/sheetcanvas/SheetView.h" line="46"/>
-        <source>Right</source>
-        <translation>Rechts</translation>
-    </message>
-    <message>
-        <location filename="../../src/sheetcanvas/SheetView.h" line="47"/>
-        <source>Left</source>
-        <translation>Links</translation>
-    </message>
-    <message>
-        <location filename="../../src/sheetcanvas/SheetView.h" line="48"/>
-        <source>Up</source>
-        <translation>Hoch</translation>
-    </message>
-    <message>
-        <location filename="../../src/sheetcanvas/SheetView.h" line="49"/>
-        <source>Down</source>
-        <translation>Runter</translation>
-    </message>
-    <message>
-        <location filename="../../src/sheetcanvas/SheetView.h" line="50"/>
-        <source>Shuttle</source>
-        <translation>Shuttle</translation>
-    </message>
-    <message>
-        <location filename="../../src/sheetcanvas/SheetView.h" line="51"/>
-        <source>To start</source>
-        <translation>Zum Start</translation>
-    </message>
-    <message>
-        <location filename="../../src/sheetcanvas/SheetView.h" line="52"/>
-        <source>To end</source>
-        <translation>Zum Ende</translation>
-    </message>
-    <message>
-        <location filename="../../src/sheetcanvas/SheetView.h" line="56"/>
-        <source>Add Marker</source>
-        <translation>Marker hinzufügen</translation>
-    </message>
-    <message>
-        <location filename="../../src/sheetcanvas/SheetView.h" line="57"/>
-        <source>Add Marker at Playhead</source>
-        <translation>Wiedergabekopf: zum Arbeitscursor</translation>
-    </message>
-    <message>
-        <location filename="../../src/sheetcanvas/SheetView.h" line="44"/>
-        <source>Set</source>
-        <translation>Set</translation>
-    </message>
-    <message>
-        <location filename="../../src/sheetcanvas/SheetView.h" line="53"/>
-        <source>To Start</source>
-        <translation>zum Start</translation>
-    </message>
-    <message>
-        <location filename="../../src/sheetcanvas/SheetView.h" line="55"/>
-        <source>Move</source>
-        <translation>Bewegen</translation>
-    </message>
-    <message>
-        <location filename="../../src/sheetcanvas/SheetView.h" line="58"/>
-        <source>To workcursor</source>
-        <translation>zum Arbeits-Cursor</translation>
-    </message>
-    <message>
-        <location filename="../../src/sheetcanvas/SheetView.h" line="59"/>
-        <source>Center</source>
-        <translation>Center</translation>
-    </message>
 </context>
 <context>
     <name>SongInfoWidget</name>
@@ -4364,6 +4078,10 @@ p, li { white-space: pre-wrap; }
         <translation>Song</translation>
     </message>
     <message>
+        <location filename="../../src/traverso/ui/SheetInfoWidget.ui" line="82"/>
+        <location filename="../../src/traverso/ui/SheetInfoWidget.ui" line="150"/>
+        <location filename="../../src/traverso/ui/SheetInfoWidget.ui" line="193"/>
+        <location filename="../../src/traverso/ui/SheetInfoWidget.ui" line="261"/>
         <location filename="../../src/traverso/ui/SheetInfoWidget.ui" line="332"/>
         <source>-</source>
         <translation>-</translation>
@@ -4417,6 +4135,7 @@ p, li { white-space: pre-wrap; }
         <translation>Obere dB-Schwelle:</translation>
     </message>
     <message>
+        <location filename="../../src/traverso/ui/SpectralMeterConfigWidget.ui" line="101"/>
         <location filename="../../src/traverso/ui/SpectralMeterConfigWidget.ui" line="124"/>
         <source> Hz</source>
         <translation> Hz</translation>
@@ -4589,6 +4308,8 @@ p, li { white-space: pre-wrap; }
         <translation>Soundkarte</translation>
     </message>
     <message>
+        <location filename="../../src/traverso/ui/SystemInfoWidget.ui" line="104"/>
+        <location filename="../../src/traverso/ui/SystemInfoWidget.ui" line="120"/>
         <location filename="../../src/traverso/ui/SystemInfoWidget.ui" line="228"/>
         <source>image</source>
         <translation>Bild</translation>
@@ -4668,12 +4389,12 @@ p, li { white-space: pre-wrap; }
         <translation>Ende</translation>
     </message>
     <message>
-        <location filename="../../src/sheetcanvas/TimeLineView.h" line="72"/>
+        <location filename="../../src/sheetcanvas/TimeLineView.cpp" line="355"/>
         <source>Add Marker</source>
         <translation>Marker hinzufügen</translation>
     </message>
     <message>
-        <location filename="../../src/sheetcanvas/TimeLineView.h" line="75"/>
+        <location filename="../../src/sheetcanvas/TimeLineView.cpp" line="467"/>
         <source>Drag Marker</source>
         <translation>Marker ziehen</translation>
     </message>
@@ -4681,26 +4402,6 @@ p, li { white-space: pre-wrap; }
         <location filename="../../src/sheetcanvas/TimeLineView.cpp" line="475"/>
         <source>Clear Markers</source>
         <translation>Mehrere Marker löschen</translation>
-    </message>
-    <message>
-        <location filename="../../src/sheetcanvas/TimeLineView.h" line="74"/>
-        <source>Remove Marker</source>
-        <translation>Marker entfernen</translation>
-    </message>
-    <message>
-        <location filename="../../src/sheetcanvas/TimeLineView.h" line="76"/>
-        <source>Clear all Markers</source>
-        <translation>Alle Marker löschen</translation>
-    </message>
-    <message>
-        <location filename="../../src/sheetcanvas/TimeLineView.h" line="73"/>
-        <source>Add Marker at Playhead</source>
-        <translation>Füge Marker beim Wiedergabekopf ein</translation>
-    </message>
-    <message>
-        <location filename="../../src/sheetcanvas/TimeLineView.h" line="77"/>
-        <source>Playhead to Marker</source>
-        <translation>Bewege Wiedergabekopf zum Marker</translation>
     </message>
     <message>
         <location filename="../../src/sheetcanvas/TimeLineView.cpp" line="378"/>
@@ -4726,29 +4427,9 @@ p, li { white-space: pre-wrap; }
         <translation>Clip hinzufügen</translation>
     </message>
     <message>
-        <location filename="../../src/core/Track.cpp" line="168"/>
-        <source>Track: AudioClip with id %1 not <byte value="x9"/><byte value="x9"/><byte value="x9"/><byte value="x9"/><byte value="x9"/><byte value="x9"/>found in Resources database!</source>
+        <location filename="../../src/core/Track.cpp" line="167"/>
+        <source>Track: AudioClip with id %1 not 						found in Resources database!</source>
         <translation>Track: AudioClip mit der ID %1 in der Resourcendatenbank nicht gefunden!</translation>
-    </message>
-    <message>
-        <location filename="../../src/core/Track.h" line="45"/>
-        <source>Mute</source>
-        <translation>Stummschaltung</translation>
-    </message>
-    <message>
-        <location filename="../../src/core/Track.h" line="46"/>
-        <source>Record: On/Off</source>
-        <translation>Aufnahme: An/Aus</translation>
-    </message>
-    <message>
-        <location filename="../../src/core/Track.h" line="47"/>
-        <source>Solo</source>
-        <translation>Solo</translation>
-    </message>
-    <message>
-        <location filename="../../src/core/Track.h" line="48"/>
-        <source>Silence other tracks</source>
-        <translation>Andere Tracks stummschalten</translation>
     </message>
 </context>
 <context>
@@ -4777,29 +4458,9 @@ p, li { white-space: pre-wrap; }
         <translation>Geben Sie einen neuen Track-Namen ein</translation>
     </message>
     <message>
-        <location filename="../../src/sheetcanvas/TrackView.cpp" line="166"/>
+        <location filename="../../src/sheetcanvas/TrackView.cpp" line="165"/>
         <source>Track %1:  %2</source>
         <translation>Track %1:  %2</translation>
-    </message>
-    <message>
-        <location filename="../../src/sheetcanvas/TrackView.h" line="36"/>
-        <source>Edit properties</source>
-        <translation>Eigenschaften bearbeiten</translation>
-    </message>
-    <message>
-        <location filename="../../src/sheetcanvas/TrackView.h" line="37"/>
-        <source>Add new Plugin</source>
-        <translation>Neues Plugin hinzufügen</translation>
-    </message>
-    <message>
-        <location filename="../../src/sheetcanvas/TrackView.h" line="38"/>
-        <source>Select Bus</source>
-        <translation>Bus wählen</translation>
-    </message>
-    <message>
-        <location filename="../../src/sheetcanvas/TrackView.h" line="39"/>
-        <source>Insert Silence</source>
-        <translation>Stille einfügen</translation>
     </message>
 </context>
 <context>

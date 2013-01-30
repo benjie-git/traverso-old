@@ -29,4 +29,7 @@ ViewItem::ViewItem(ViewItem* parentViewItem, ContextItem* parentContext)
 	set_context_item(parentContext);
 	m_parentViewItem = parentViewItem;
 	setCursor(themer()->get_cursor("Default"));
+#if QT_VERSION >= 0x040600
+	setFlags(QGraphicsItem::ItemUsesExtendedStyleOption);
+#endif
 }
