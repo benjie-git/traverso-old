@@ -77,6 +77,7 @@ struct ExportSpecification
 
 	int   		status;
 	bool		allSheets;
+	bool		oneFilePerMarker;
 	int		isRecording;
 	QString		exportdir;
 	QString		basename;

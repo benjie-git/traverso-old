@@ -224,11 +224,14 @@ private:
 	void start_transport_rolling(bool realtime);
 	void stop_transport_rolling();
 	void update_skip_positions();
-        QString format_track_name(Marker *, int);
-        QList<Marker *> get_cdtrack_list(ExportSpecification*);
+	QString format_basename();
+	QString format_track_name(Marker *, int);
+	QList<Marker *> get_cdtrack_list(ExportSpecification*);
 	
 	void resize_buffer(bool updateArmStatus, nframes_t size);
-
+	
+	int export_one_file(ExportSpecification* spec, QString name);
+	
 	Track* create_track();
 	
 	friend class AudioClipManager;

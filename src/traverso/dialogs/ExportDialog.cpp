@@ -107,6 +107,12 @@ void ExportDialog::on_startButton_clicked( )
                 m_exportSpec->allSheets = false;
 	}
 	
+	if (perMarkerButton->isChecked()) {
+		m_exportSpec->oneFilePerMarker = true;
+	} else {
+		m_exportSpec->oneFilePerMarker = false;
+	}
+	
 	m_exportSpec->exportdir = exportDirName->text();
 	if (m_exportSpec->exportdir.size() > 1 && (m_exportSpec->exportdir.at(m_exportSpec->exportdir.size()-1).decomposition() != "/")) {
 		m_exportSpec->exportdir = m_exportSpec->exportdir.append("/");

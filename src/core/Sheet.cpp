@@ -486,51 +486,79 @@ int Sheet::finish_audio_export()
 }
 
 
+int Sheet::export_one_file(ExportSpecification* spec, QString description)
+{
+	QString message;
+	
+	spec->totalTime     = spec->trackEnd - spec->trackStart;
+	spec->pos           = spec->trackStart;
+	spec->endLocation	= spec->trackEnd;
+	
+	m_transportLocation = spec->trackStart;
+	
+	if (spec->renderpass == ExportSpecification::WRITE_TO_HARDDISK) {
+		m_exportSource = new WriteSource(spec);
+		
+		if (m_exportSource->prepare_export() == -1) {
+			delete m_exportSource;
+			return -1;
+		}
+		
+		message = QString(tr("Rendering %1")).arg(description);
+		
+	} else if (spec->renderpass == ExportSpecification::CALC_NORM_FACTOR) {
+		message = QString(tr("Normalising %1")).arg(description);
+	}
+	
+	m_project->set_export_message(message);
+	
+	qDebug("export: starting render process");
+	while(render(spec) > 0) {}
+	
+	if (spec->renderpass == ExportSpecification::WRITE_TO_HARDDISK) {
+		qDebug("export: deleting writesource");
+		m_exportSource->finish_export();
+		delete m_exportSource;
+	}
+	return 1;
+}
+
+
 // this function is called from the parent project. if several cd-tracks should be exported
 // to separate files, we will call the render() process for each file.
 int Sheet::start_export(ExportSpecification* spec)
 {
-	QString message;
 	spec->markers = get_cdtrack_list(spec);
 	
-	for (int i = 0; i < spec->markers.size()-1; ++i) {
-		spec->trackStart    = cd_to_timeref(timeref_to_cd(spec->markers.at(i)->get_when()));
-		spec->trackEnd      = cd_to_timeref(timeref_to_cd(spec->markers.at(i+1)->get_when()));
-		spec->name          = format_track_name(spec->markers.at(i), i+1);
-		spec->totalTime     = spec->trackEnd - spec->trackStart;
-		spec->pos           = spec->trackStart;
-		spec->endLocation	= spec->trackEnd;
-		
-		m_transportLocation = spec->trackStart;
-		
-		if (spec->renderpass == ExportSpecification::WRITE_TO_HARDDISK) {
-			m_exportSource = new WriteSource(spec);
+	if (spec->oneFilePerMarker) {
+		for (int i = 0; i < spec->markers.size()-1; ++i) {
+			spec->trackStart    = cd_to_timeref(timeref_to_cd(spec->markers.at(i)->get_when()));
+			spec->trackEnd      = cd_to_timeref(timeref_to_cd(spec->markers.at(i+1)->get_when()));
+			spec->name          = format_track_name(spec->markers.at(i), i+1);
 			
-			if (m_exportSource->prepare_export() == -1) {
-				delete m_exportSource;
+			QString description = QString(tr("Sheet %1 - Track %2 of %3")).arg(title).arg(i+1).arg(spec->markers.size()-1);
+			
+			if (export_one_file(spec, description) != 1) {
 				return -1;
 			}
 			
-			message = QString(tr("Rendering Sheet %1 - Track %2 of %3")).arg(title).arg(i+1).arg(spec->markers.size()-1);
-			
-		} else if (spec->renderpass == ExportSpecification::CALC_NORM_FACTOR) {
-			message = QString(tr("Normalising Sheet %1 - Track %2 of %3")).arg(title).arg(i+1).arg(spec->markers.size()-1);
+			qDebug("restarting loop");
 		}
+	}
+	else {
+		QString description = QString(tr("Sheet %1")).arg(title);
 		
-		m_project->set_export_message(message);
+		spec->trackStart    = spec->startLocation;
+		spec->trackEnd      = spec->endLocation;
+		spec->name          = format_basename();
 		
-		qDebug("export: starting render process");
-		while(render(spec) > 0) {}
-		
-		if (spec->renderpass == ExportSpecification::WRITE_TO_HARDDISK) {
-			qDebug("export: deleting writesource");
-			m_exportSource->finish_export();
-			delete m_exportSource;
+		if (export_one_file(spec, description) != 1) {
+			return -1;
 		}
-		qDebug("restarting loop");
 	}
 	
 	finish_audio_export();
+	
 	return 1;
 }
 
@@ -620,6 +648,14 @@ out:
 	return ret;
 }
 
+
+QString Sheet::format_basename()
+{
+	QString basename = "Sheet_" + QString::number(m_project->get_sheet_index(m_id)) +"-" + title;
+	return basename;
+}
+
+
 // formatting the track names in a separate function to guarantee that
 // the file names of exported tracks and the entry in the TOC file always
 // match
@@ -629,8 +665,7 @@ QString Sheet::format_track_name(Marker *marker, int i)
 	QString song = marker->get_description();
 	QString performer = marker->get_performer();
 	
-	QString basename = "Sheet_" + QString::number(m_project->get_sheet_index(m_id)) +"-" + title;
-	name = basename + QString("-") + QString("%1").arg(i, 2, 10, QChar('0'));
+	name = format_basename() + "-" + QString("%1").arg(i, 2, 10, QChar('0'));
 	
 	if (!performer.isEmpty()) {
 		name += "-" + performer;
